@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Студия разработки сайтов, интернет-магазинов, веб и мобильных приложений</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<!----------------------------- Header --------------------------------->
+    <header>
+        <nav>
+            <ul class="list">
+                <li>
+                    <a lang="en" href="/" class="logo-header"><span class="logo-accent">Web</span>Studio</a>
+                </li>
+                <li>
+                    <a href="" class="list-menu">Студия</a>
+                </li>
+                <li>
+                    <a href="" class="list-menu">Портфолио</a>
+                </li>
+                <li>
+                    <a href="" class="list-menu">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="list">
+            <li>
+                <a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
+            </li>
+            <li>
+                <a href="tel:+380961111111"  class="header-contacts">+38 096 111 11 11</a>
+            </li> 
+        </ul>
+    </header>
+
+    <main>
+<!----------------------------- Hero --------------------------------->
+        <section class="hero">
+                <h1 class="hero-h">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="button-header">Заказать услугу</button>
+        </section>
+<!------------------------- Наши преимущества ------------------------>
+        <section>
+            <!-- Скрыть h2 в css -->
+            <h2 hidden>Наши преимущества</h2>
+            <ul class="list">
+                <li>
+                    <h3 class="advantages">Внимание к деталям</h3>
+                    <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li>
+                    <h3 class="advantages">Пунктуальность</h3>
+                    <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </li>
+                <li>
+                    <h3 class="advantages">Планирование</h3>
+                    <p class="advantages-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </li>
+                <li>
+                    <h3 class="advantages">Современные технологии</h3>
+                    <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </li>
+            </ul>
+        </section>
+<!------------------------- Особенности ------------------------>
+        <section>
+            <h2 class="particuliarities">Чем мы занимаемся</h2>
+            <ul class="list specialization-img">
+                <li><img src="./images/algorithm.jpg" alt="Написание кода, алгоритм" width="370" height="294"></li>
+                <li><img src="./images/mobile.jpg" alt="Разработка мобильных приложений" width="370" height="294"></li>
+                <li><img src="./images/html-colors.jpg" alt="Цветовая палитра" width="370" height="294"></li>
+            </ul>           
+        </section>
+
+        <section>
+            <h2 class="particuliarities">Наша команда</h2>
+            <!-- our-team ??? li или классы img+h3+p -->
+            <ul class="list our-team">
+                <li>
+                    <img class="teammate-photo" lang="en" src="./images/ihor.jpg" alt="Photo of Product Designer" width="270">
+                        <h3 class="teammate-name">Игорь Демьяненко</h3>
+                        <p class="teammate-position" lang="en">Product Designer</p>                    
+                </li>
+                <li>
+                    <img class="teammate-photo" lang="en" src="./images/olha.jpg" alt="Photo of Frontend Developer" width="270">
+                        <h3 class="teammate-name">Ольга Репина</h3>   
+                        <p class="teammate-position" lang="en">Frontend Developer</p>                 
+                </li>
+                <li>
+                    <img class="teammate-photo" lang="en" src="./images/nick.jpg" alt="Photo of Marketing Expert" width="270">
+                        <h3 class="teammate-name">Николай Тарасов</h3>
+                        <p class="teammate-position" lang="en">Marketing</p>                    
+                </li>
+                <li>
+                    <img class="teammate-photo" lang="en" src="./images/mick.jpg" alt="Photo of UI Designer" width="270">
+                    <h3 class="teammate-name">Михаил Ермаков</h3> 
+                    <p class="teammate-position" lang="en">UI Designer</p>                   
+                </li>
+            </ul>            
+        </section>
+    </main>
+
+    <footer>
+        <a lang="en" href="/"><span>Web</span>Studio</a>
+        <address>
+            <ul class="list">
+                <li><a href="https://goo.gl/maps/GgaBB5i8PTadJ9jeA" target="_blank" rel="noopener noreferer" >г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>     
+        </address>
+    </footer>
+    
+</body>
+</html>
