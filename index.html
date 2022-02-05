@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Студия разработки сайтов, интернет-магазинов, веб и мобильных приложений</title>
-    
+        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,15 +19,15 @@
 <!----------------------------- Header --------------------------------->
     <header>
         <nav>
-            <ul class="list">
+            <ul class="list nav-list">
                 <li>
-                    <a lang="en" href="/" class="logo-header"><span class="logo-accent">Web</span>Studio</a>
+                    <a lang="en" href="/" class="logo"><span class="logo-accent">Web</span><span class="logo-header-color">Studio</span></a>
                 </li>
                 <li>
-                    <a href="" class="list-menu">Студия</a>
+                    <a href="./index.html" class="list-menu current">Студия</a>
                 </li>
                 <li>
-                    <a href="" class="list-menu">Портфолио</a>
+                    <a href="./portfolio.html" class="list-menu">Портфолио</a>
                 </li>
                 <li>
                     <a href="" class="list-menu">Контакты</a>
@@ -77,13 +77,13 @@
         <section>
             <h2 class="particuliarities">Чем мы занимаемся</h2>
             <ul class="list specialization-img">
-                <li><img src="./images/algorithm.jpg" alt="Написание кода, алгоритм" width="370" height="294"></li>
-                <li><img src="./images/mobile.jpg" alt="Разработка мобильных приложений" width="370" height="294"></li>
-                <li><img src="./images/html-colors.jpg" alt="Цветовая палитра" width="370" height="294"></li>
+                <li><img class="particuliarities-photo" src="./images/algorithm.jpg" alt="Написание кода, алгоритм" width="370" height="294"></li>
+                <li><img class="particuliarities-photo" src="./images/mobile.jpg" alt="Разработка мобильных приложений" width="370" height="294"></li>
+                <li><img class="particuliarities-photo" src="./images/html-colors.jpg" alt="Цветовая палитра" width="370" height="294"></li>
             </ul>           
         </section>
 
-        <section>
+        <section class="team-backgroung">
             <h2 class="particuliarities">Наша команда</h2>
             <!-- our-team ??? li или классы img+h3+p -->
             <ul class="list our-team">
@@ -110,16 +110,16 @@
             </ul>            
         </section>
     </main>
-
-    <footer>
-        <a lang="en" href="/"><span>Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li><a href="https://goo.gl/maps/GgaBB5i8PTadJ9jeA" target="_blank" rel="noopener noreferer" >г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>     
-        </address>
+<!------------------------------ Footer ----------------------------->
+    <footer class="footer-background">
+        <a lang="en" href="/" class="logo"><span class="logo-accent">Web</span><span class="logo-footer-color">Studio</span></a>
+            <address>
+                <ul class="list">
+                    <li><a class="address-list" href="https://goo.gl/maps/GgaBB5i8PTadJ9jeA" target="_blank" rel="noopener noreferer" >г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="address-list footer-adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="address-list footer-adress" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>     
+            </address>
     </footer>
     
 </body>

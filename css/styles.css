@@ -1,13 +1,14 @@
 :root {
-  --main: #757575;
+  --logo-header-color: #000000;
   --h-color: #212121;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --logo-header-color: #000000;
-  --backgroung-dark: #2f303a;
-  --backgroung-grey: #f5f4fa;
-  --font-family-main: 'roboto';
-  --font-family-secondary: 'raleway';
+  --main-text-color: #757575;
+  --footer-adress-transparent: rgba(255, 255, 255, 0.6);
+  --backgroung-main-color: #ffffff;
+  --backgroung-hero-footer: #2f303a;
+  --backgroung-team: #f5f4fa;
+  --font-family-main: 'roboto', 'sans-serif';
+  --font-family-secondary: 'raleway', 'sans-serif';
 }
 
 html,
@@ -19,8 +20,8 @@ body {
 body {
   font-family: var(--font-family-main);
   font-size: 14px;
-  background-color: var(--white-color);
-  color: var(--main);
+  background-color: var(--backgroung-main-color);
+  color: var(--main-text-color);
 }
 
 a {
@@ -36,7 +37,7 @@ a {
   width: 1600px;
 }
 
-.logo-header {
+.logo {
   font-family: var(--font-family-secondary);
   font-weight: 700;
   font-size: 26px;
@@ -44,14 +45,15 @@ a {
   letter-spacing: 0.03em;
   line-height: 1.2;
 
-  color: var(--logo-header-color);
-
   margin-top: 24px;
   margin-bottom: 25px;
   margin-left: 215px;
 }
+
 .logo-header-color {
+  color: var(--logo-header-color);
 }
+
 .logo-accent {
   color: var(--accent-color);
 }
@@ -72,11 +74,14 @@ a {
 .header-contacts:focus {
   color: var(--accent-color);
 }
+.nav-list .list-menu.current {
+  color: var(--accent-color);
+}
 
 /* ===================== Hero ======================= */
 .hero {
-  background-color: var(--backgroung-dark);
-  color: var(--white-color);
+  background-color: var(--backgroung-hero-footer);
+  color: var(--backgroung-main-color);
 }
 .hero-h {
   text-align: center;
@@ -94,30 +99,42 @@ a {
 }
 .button-header {
   background-color: var(--accent-color);
-  color: var(--white-color);
+  color: var(--backgroung-main-color);
 
-  font-family: var(--font-family-main);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
 
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   cursor: pointer;
 }
-
+.filters-list .radio-button.current {
+  background-color: var(--accent-color);
+}
 /* ===================== Наши преимущества ======================= */
 h2,
 h3 {
   color: var(--h-color);
+  letter-spacing: 0.03em;
 }
 
 .advantages {
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .advantages-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 /* ===================== Особенности ======================= */
 .particuliarities {
@@ -125,20 +142,71 @@ h3 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+.particuliarities-photo {
+  width: 370px;
+}
+.team-backgroung {
+  background-color: var(--backgroung-team);
 }
 .our-team {
 }
 .specialization-img {
 }
 .teammate-photo {
+  width: 270px;
 }
-.teammate-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
+.teammate-name,
 .teammate-position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+.teammate-name {
+  font-weight: 500;
+}
+/* =========================== Footer =============================== */
+.footer-background {
+  background-color: var(--backgroung-hero-footer);
+  position: absolute;
+  height: 648px;
+}
+.logo-footer-color {
+  color: var(--backgroung-main-color);
+}
+.address-list {
+  color: var(--backgroung-main-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-adress {
+  color: var(--footer-adress-transparent);
+}
+/* =================== Projects ===================== */
+
+.radio-button {
+  background-color: var(--backgroung-team);
+  color: var(--h-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+.filters-list .radio-button.current,
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--backgroung-main-color);
+}
+.projects-photo {
+  width: 370px;
 }
